@@ -1,0 +1,20 @@
+name: 'Setup SSH key for installing private pods'
+description: 'Enables the ability to install private pods using the given private deploy key'
+author: 'Gopal Sharma <gps@surya-soft.com>'
+inputs:
+  NAME:
+    description: Name of the key to be used to save the private SSH Key
+    required: true
+  SSH_KEY:
+    description: SSH_KEY is the private SSH key to be used to install the pod
+    required: true
+  REPO:
+    description: SSH URL of the private pod repository
+    required: true
+  PODFILE:
+    description: Podfile path where the SSH URL of the private pod repository is used to install the pod
+    required: true
+    default: "./podfile"
+runs:
+  using: node12
+  main: index.js
