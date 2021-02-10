@@ -13,8 +13,8 @@ inputs:
     required: true
   PODFILE:
     description: Podfile path where the SSH URL of the private pod repository is used to install the pod
-    required: true
-    default: "./podfile"
+    required: false
+    default: "./Podfile"
 runs:
   using: node12
   main: index.js

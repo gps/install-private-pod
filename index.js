@@ -31,7 +31,7 @@ async function run() {
 
   // Podfile path
   if (!podfile) {
-    podfile = "./podfile"
+    podfile = "./Podfile"
   }
 
   // Modified repo URL
