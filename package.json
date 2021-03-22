@@ -2,7 +2,7 @@
   "name": "install-private-pod",
   "version": "1.0.0",
   "description": "A GitHub Action that enables to install private pods using the given private deploy key",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {},
   "repository": {
     "type": "git",
