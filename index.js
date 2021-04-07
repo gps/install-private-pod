@@ -7,7 +7,6 @@ function getHomeEnv() {
 		// Windows
 		return "USERPROFILE";
 	}
-
 	// macOS / Linux
 	return "HOME";
 }
@@ -86,7 +85,6 @@ async function run() {
   }
 
   // Modify Podfile to use new repo URL
- 
   fs.readFile(podfile, 'utf8', function (err,data) {
     if (err) throw err;
     const replacer = new RegExp(repo, 'g')
